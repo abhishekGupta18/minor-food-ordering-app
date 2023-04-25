@@ -1,8 +1,22 @@
 import { useCartContext } from "../../Context/CartContext";
 export const Cart = () => {
-  const { cart, removeFromCart } = useCartContext();
+  const {
+    cart,
+    removeFromCart,
+    totalPrice,
+    disscountPrice,
+    disscount,
+    setDisscount,
+  } = useCartContext();
   return (
     <div>
+      <h2>Total price: {disscount ? totalPrice : disscountPrice}</h2>
+      <button
+        onClick={() => setDisscount(!disscount)}
+        disabled={cart.length === 0}
+      >
+        {disscount ? "Apply Coupon" : "Remove Coupon"}
+      </button>
       <ul>
         {cart?.map(
           ({
