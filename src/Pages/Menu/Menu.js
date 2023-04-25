@@ -1,7 +1,17 @@
+import { useFoodDataContext } from "../../Context/FoodDataContext";
+import { MenuCard } from "../MenuCard/MenuCard";
+
+import "./Menu.css";
+
 export const Menu = () => {
+  const { foodData } = useFoodDataContext();
   return (
-    <>
-      <h1>This is menu </h1>
-    </>
+    <div>
+      <ul>
+        {foodData?.map((item) => (
+          <MenuCard {...item} />
+        ))}
+      </ul>
+    </div>
   );
 };

@@ -6,11 +6,18 @@ import reportWebVitals from "./reportWebVitals";
 
 import { BrowserRouter } from "react-router-dom";
 
+import { FoodDataContextProvider } from "./Context/FoodDataContext";
+import { CartContextProvider } from "./Context/CartContext";
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <FoodDataContextProvider>
+        <CartContextProvider>
+          <App />
+        </CartContextProvider>
+      </FoodDataContextProvider>
     </BrowserRouter>
   </React.StrictMode>
 );
