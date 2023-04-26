@@ -1,4 +1,7 @@
 import { useCartContext } from "../../Context/CartContext";
+
+import "./Cart.css";
+
 export const Cart = () => {
   const {
     cart,
@@ -9,14 +12,16 @@ export const Cart = () => {
     setDisscount,
   } = useCartContext();
   return (
-    <div>
-      <h2>Total price: {disscount ? totalPrice : disscountPrice}</h2>
-      <button
-        onClick={() => setDisscount(!disscount)}
-        disabled={cart.length === 0}
-      >
-        {disscount ? "Apply Coupon" : "Remove Coupon"}
-      </button>
+    <div className="cart-container">
+      <div className="total-price">
+        <h3>Total Price: ₹{disscount ? totalPrice : disscountPrice}</h3>
+        <button
+          onClick={() => setDisscount(!disscount)}
+          disabled={cart.length === 0}
+        >
+          {disscount ? "Apply Coupon" : "Remove Coupon"}
+        </button>
+      </div>
       <ul>
         {cart?.map(
           ({
@@ -28,7 +33,7 @@ export const Cart = () => {
             delivery_time,
             quantity,
           }) => (
-            <article>
+            <article className="cart-items">
               <img src={image} alt={name} />
               <p>
                 <strong>Name: </strong> {name}

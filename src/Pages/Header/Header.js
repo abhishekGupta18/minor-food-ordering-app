@@ -8,7 +8,7 @@ export const Header = () => {
   return (
     <div className="navigation">
       <h2>
-        Neog<span>Food</span>
+        Abhi<span>Food</span>
       </h2>
       <nav>
         <NavLink to="/">Home</NavLink>

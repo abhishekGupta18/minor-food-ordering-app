@@ -7,13 +7,20 @@
   width: 250px;
   margin: 30px 0 0 0;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* border: 1px solid black; */
+  height: 450px;
   /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
 }
 
 .food-card img {
   width: 100%;
+  height: 200px;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  object-fit: cover;
 }
 
 .food-card p {
@@ -28,4 +35,7 @@
   border-radius: 10px;
   color: #ffff;
   background-color: #ef4444;
+  width: 150px;
+  margin-left: 50px;
+  /* margin-top: auto; */
 }

@@ -4,35 +4,68 @@
 }
 
 body {
-  background-color: #e0f2fe;
+  background-color: #ffff;
   /* background-color: #dbeafe; */
 }
-
 .container {
   display: flex;
-  flex-direction: column;
-  margin-top: 200px;
+  /* margin-top: 100px; */
   align-items: center;
+  justify-content: center;
+  gap: 100px;
 }
-.container h1 {
+.container-text h1 {
   font-size: 50px;
   font-family: "Dancing Script", cursive;
 }
-
-.container h1 span {
-  color: #2563eb;
+.container img {
+  height: 500px;
+  width: 500px;
+  margin-top: 100px;
+  animation-name: float;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
 }
-.container button {
+@keyframes float {
+  0%,
+  100% {
+    transform: translatex(0rem);
+  }
+  50% {
+    transform: translatex(5rem);
+  }
+}
+.container-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container-text h1 span {
+  color: #ef4444;
+}
+.container-text h2 {
+  margin-top: 10px;
+  font-size: 30px;
+  font-family: "Dancing Script", cursive;
+}
+.container-text h2 span {
+  color: #ef4444;
+}
+
+.container-text button {
   padding: 12px 35px;
   text-decoration: none;
   border: none;
   border-radius: 15px;
-  background-color: #2563eb;
+  background-color: #ef4444;
   margin-top: 40px;
 }
-.container button a {
+.container-text button a {
   text-decoration: none;
   font-size: 25px;
   font-weight: 600;
   color: #fff;
+  font-family: "Dancing Script", cursive;
 }
