@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+.navigation {
+  height: 50px;
+  display: flex;
+  gap: 50px;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px 0 0 0;
+  /* border: 1px solid black; */
+  padding: 30px 0;
+}
+.navigation h2 {
+  margin: 0 500px 0 0;
+  font-family: "Dancing Script", cursive;
+  font-size: 35px;
+}
+.navigation h2 span {
+  color: #2563eb;
+}
+.navigation nav {
+  display: flex;
+  gap: 100px;
+}
+.navigation nav a {
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 700;
+  color: #2563eb;
+  font-family: "Dancing Script", cursive;
+}

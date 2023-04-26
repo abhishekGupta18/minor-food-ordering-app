@@ -7,7 +7,7 @@ export const Menu = () => {
   const { foodData, searchHandle, checkCategory, sortByPrice, dataToMap } =
     useFoodDataContext();
   return (
-    <div>
+    <div className="menu-container">
       <input
         type="text"
         placeholder="serch your food"

@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: #e0f2fe;
+  /* background-color: #dbeafe; */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 200px;
+  align-items: center;
+}
+.container h1 {
+  font-size: 50px;
+  font-family: "Dancing Script", cursive;
+}
+
+.container h1 span {
+  color: #2563eb;
+}
+.container button {
+  padding: 12px 35px;
+  text-decoration: none;
+  border: none;
+  border-radius: 15px;
+  background-color: #2563eb;
+  margin-top: 40px;
+}
+.container button a {
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 600;
+  color: #fff;
+}
