@@ -10,15 +10,10 @@ export const MenuCard = ({
 }) => {
   const { cartHandlerButton } = useCartContext();
   return (
-    <article>
+    <article className="food-card">
       <img src={image} alt={name} />
-      <p>
-        <strong>Name: </strong> {name}
-      </p>
-      <p>
-        <strong>Description: </strong>
-        {description}
-      </p>
+      <p style={{ fontSize: "25px", color: "#262626" }}>{name}</p>
+      <p>{description}</p>
       <p>Price: {price}</p>
       <p>Delivery Time: {delivery_time}min</p>
       <button

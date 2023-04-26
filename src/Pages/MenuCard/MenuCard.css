@@ -1,12 +1,31 @@
-article {
-  width: 300px;
-  min-height: 420px;
-  padding: 10px;
-  border: 1px solid black;
-  border-radius: 10px;
-  margin: 20px 0 0 0;
+* {
+  margin: 0;
+  box-sizing: border-box;
 }
-article img {
+
+.food-card {
+  width: 250px;
+  margin: 30px 0 0 0;
+  text-align: center;
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+}
+
+.food-card img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.food-card p {
+  margin: 10px 0 10px 0;
+}
+
+.food-card button {
+  padding: 8px 15px;
+  font-size: 15px;
+  font-weight: 700;
+  border: none;
   border-radius: 10px;
-  width: 80%;
+  color: #ffff;
+  background-color: #ef4444;
 }

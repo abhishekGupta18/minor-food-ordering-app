@@ -8,33 +8,47 @@ export const Menu = () => {
     useFoodDataContext();
   return (
     <div className="menu-container">
-      <input
-        type="text"
-        placeholder="serch your food"
-        onChange={searchHandle}
-      />
+      <div className="inputs-feilds">
+        <input
+          className="search-input"
+          type="text"
+          placeholder="search your food"
+          onChange={searchHandle}
+        />
 
-      <input type="checkbox" value="is_vegetarian" onChange={checkCategory} />
-      <label>Veg</label>
+        <div className="filters">
+          <input
+            type="checkbox"
+            value="is_vegetarian"
+            onChange={checkCategory}
+          />
+          <label>Veg</label>
+        </div>
 
-      <input type="checkbox" value="is_spicy" onChange={checkCategory} />
-      <label>Spicy</label>
+        <div className="filters">
+          <input type="checkbox" value="is_spicy" onChange={checkCategory} />
+          <label>Spicy</label>
+        </div>
 
-      <input
-        type="radio"
-        name="sortByPrice"
-        value="lowToHigh"
-        onChange={sortByPrice}
-      />
-      <label>Low to high</label>
-
-      <input
-        type="radio"
-        name="sortByPrice"
-        value="highToLow"
-        onChange={sortByPrice}
-      />
-      <label>High to low</label>
+        <div className="filters">
+          <input
+            type="radio"
+            name="sortByPrice"
+            value="lowToHigh"
+            onChange={sortByPrice}
+          />
+          <label>Low to high</label>
+        </div>
+        <div className="filters">
+          <input
+            type="radio"
+            name="sortByPrice"
+            value="highToLow"
+            onChange={sortByPrice}
+          />
+          <label>High to low</label>
+        </div>
+      </div>
 
       <ul>
         {dataToMap?.map((item) => (

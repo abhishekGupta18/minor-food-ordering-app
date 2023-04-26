@@ -1,5 +1,48 @@
-ul {
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0 0 0;
+}
+
+.inputs-feilds {
+  display: flex;
+  justify-content: center;
+  justify-content: flex-start;
+  margin-left: 100px;
+  gap: 50px;
+}
+
+.search-input {
+  padding: 15px 15px;
+  overflow: hidden;
+  border: 1px solid #1f2937;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.menu-container ul {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+}
+
+.filters {
+  margin: 10px 0 0 0;
+}
+
+.filters label {
+  margin: 0 0 0 5px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.filters input {
+  border: 2px solid black;
+  width: 30px;
 }
